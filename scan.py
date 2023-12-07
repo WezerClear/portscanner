@@ -2,7 +2,6 @@ import argparse
 import socket
 import time
 import json
-import re
 
 
 def main():
