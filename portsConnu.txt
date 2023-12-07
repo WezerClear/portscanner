@@ -1,0 +1,116 @@
+Port 0 : Reserved
+Port 1 : TCPMUX, TCP Port Service Multiplexer
+Port 5 : Remote Job Entry
+Port 7 : Echo
+Port 9 : Discard
+Port 11 : systat
+Port 13 : Daytime
+Port 17 : Quote of the Day
+Port 18 : Message Send Protocol
+Port 19 : Character Generator
+Port 20 : FTP - File Transfer Protocol (Data)
+Port 21 : FTP - File Transfer Protocol (Control)
+Port 22 : SSH - Secure Shell
+Port 23 : Telnet
+Port 25 : SMTP - Simple Mail Transfer Protocol
+Port 37 : Time
+Port 39 : Resource Location Protocol
+Port 42 : Host Name Server
+Port 43 : WHOIS
+Port 49 : TACACS Login Host
+Port 53 : DNS - Domain Name System
+Port 67 : DHCP - Dynamic Host Configuration Protocol (BootP server)
+Port 68 : DHCP - Dynamic Host Configuration Protocol (BootP client)
+Port 69 : TFTP - Trivial File Transfer Protocol
+Port 70 : Gopher
+Port 79 : Finger
+Port 80 : HTTP - Hypertext Transfer Protocol
+Port 88 : Kerberos - Authentication system
+Port 101 : NIC Host Name Server
+Port 102 : ISO-TSAP Class 0
+Port 104 : DICOM - Digital Imaging and Communications in Medicine
+Port 105 : CCSO name server protocol
+Port 107 : Remote Telnet Service
+Port 109 : POP2 - Post Office Protocol - Version 2
+Port 110 : POP3 - Post Office Protocol - Version 3
+Port 111 : RPC - Remote Procedure Call
+Port 113 : IDENT - Identification Protocol
+Port 115 : SFTP - Simple File Transfer Protocol
+Port 117 : UUCP Path Service
+Port 119 : NNTP - Network News Transfer Protocol
+Port 123 : NTP - Network Time Protocol
+Port 135 : MS RPC - Microsoft Remote Procedure Call
+Port 137 : NetBIOS over TCP/IP
+Port 138 : NetBIOS Datagram Service
+Port 139 : NetBIOS Session Service
+Port 143 : IMAP - Internet Message Access Protocol
+Port 161 : SNMP - Simple Network Management Protocol
+Port 179 : BGP - Border Gateway Protocol
+Port 194 : IRC - Internet Relay Chat
+Port 201 : AppleTalk Routing Maintenance
+Port 209 : Quick Mail Transfer Protocol
+Port 210 : ANSI Z39.50
+Port 213 : IPX
+Port 220 : IMAP3
+Port 389 : LDAP - Lightweight Directory Access Protocol
+Port 443 : HTTPS - Hypertext Transfer Protocol over TLS/SSL
+Port 444 : SNPP - Simple Network Paging Protocol
+Port 445 : Microsoft-DS - Microsoft Directory Services
+Port 464 : Kerberos change/set password
+Port 465 : SMTP over SSL/TLS (deprecated, see Port 587)
+Port 497 : Retrospect
+Port 500 : ISAKMP/IKE - Internet Key Exchange
+Port 502 : Modbus Protocol
+Port 514 : Syslog
+Port 515 : Line Printer Daemon
+Port 520 : RIP - Routing Information Protocol
+Port 521 : RIPng - Routing Information Protocol next generation
+Port 530 : RPC
+Port 531 : AOL Instant Messenger (default)
+Port 532 : Netnews Administration System
+Port 540 : UUCP - Unix-to-Unix Copy Protocol
+Port 543 : KLogin
+Port 544 : KShell
+Port 546 : DHCPv6 Client
+Port 547 : DHCPv6 Server
+Port 548 : AFP over TCP
+Port 554 : RTSP - Real Time Streaming Protocol
+Port 563 : NNTP over TLS/SSL
+Port 565 : whoami
+Port 587 : Submission - Email message submission
+Port 591 : FileMaker 6.0 Web Sharing (HTTP Alternate, also see Port 80)
+Port 593 : HTTP RPC Ep Map
+Port 631 : IPP - Internet Printing Protocol
+Port 636 : LDAPS - Lightweight Directory Access Protocol over TLS/SSL
+Port 639 : MSDP - Multicast Source Discovery Protocol
+Port 646 : LDP - Label Distribution Protocol
+Port 648 : RRP - Registry Registrar Protocol
+Port 666 : Doom (Id Software) - First online first-person shooter game
+Port 667 : Campaign contribution disclosures - SDR Technologies
+Port 668 : MeComm
+Port 669 : MeRegister
+Port 677 : Virtual Presence Protocol
+Port 678 : GNU Generation Foundation NCP
+Port 691 : MS Exchange Routing
+Port 692 : Hyperwave-ISP
+Port 694 : Haas Collective I/O
+Port 695 : IEEE-MMS-SSL
+Port 699 : Access Network
+Port 700 : EPP - Extensible Provisioning Protocol
+Port 701 : Link Management Protocol (LMP)
+Port 702 : IRCS - IRCS (Internet Relay Chat over SSL)
+Port 706 : SILC - Secure Internet Live Conferencing
+Port 711 : TDP - Tag Distribution Protocol
+Port 712 : TBRPF - Topology Broadcast based on Reverse-Path Forwarding
+Port 749 : Kerberos Administration
+Port 750 : Kerberos version IV
+Port 765 : WEBWRT
+Port 767 : IMAPS - Internet Message Access Protocol over TLS/SSL
+Port 773 : Submission over TLS/SSL
+Port 777 : Multiling HTTP
+Port 783 : SpamAssassin
+Port 787 : QVT/Term - Tupl (qvtnet)
+Port 800 : HTTP Alternate (see Port 80)
+Port 801 : device
+Port 808 : HTTP Proxy
+Port 843 : Adobe Flash
