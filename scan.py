@@ -52,7 +52,7 @@ def main():
         return scanSpé(args.ip, args.port, args.temps, args.verbose)
 
 
-def scanAll(ip, temps, verbose):
+def scanAll(ip: str, temps: str, verbose: str):
     print("----------------Scan All Port----------------")
     if temps == None:
         temps = 0
@@ -76,7 +76,7 @@ def scanAll(ip, temps, verbose):
     return print(json_resultat)
 
 
-def scanFast(ip, temps, verbose):
+def scanFast(ip: str, temps: str, verbose: str):
     print("----------------Scan Most used Port----------------")
     if temps == None:
         temps = 0
@@ -105,7 +105,7 @@ def scanFast(ip, temps, verbose):
     return print(json_resultat)
 
 
-def scanSpé(ip, port, temps, verbose):
+def scanSpé(ip: str, port: str, temps: str, verbose: str):
     print("----------------Scan", port, "Port----------------")
     if temps == None:
         temps = 0
@@ -130,7 +130,7 @@ def scanSpé(ip, port, temps, verbose):
     return print(json_resultat)
 
 
-def getService(port):
+def getService(port: str):
     try:
         with open("portsConnu.txt", "r") as fichier:
             for ligne in fichier:
