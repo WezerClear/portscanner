@@ -42,10 +42,10 @@ def main():
     #    for p in list:
     #        if int(p) < 0 or int(p) > 65535:
     #            return print("Saisir port valide")
-    if args.port and args.port.lower() == "fast":
+    if args.port.lower() == "fast":
         print("fast")
         return scanFast(args.ip, args.temps, args.verbose)
-    elif args.port and args.port.lower() == "all":
+    elif args.port.lower() == "all":
         print("all")
         return scanAll(args.ip, args.temps, args.verbose)
     else:
