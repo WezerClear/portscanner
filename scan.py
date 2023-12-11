@@ -35,15 +35,22 @@ def main():
         required=False,
         help="Activer le mode verbose",
     )
+    parser.add_argument(
+        "-6",
+        "--ipv6",
+        action="store_true",
+        required=False,
+        help="Utilise une IPV6",
+    )
 
     args = parser.parse_args()
 
     if args.port.lower() == "fast":
         print("fast")
-        return scanFast(args.ip, args.temps, args.verbose)
+        return scanFast(args.ip, args.temps, args.verbose, args.ipv6)
     elif args.port.lower() == "all":
         print("all")
-        return scanAll(args.ip, args.temps, args.verbose)
+        return scanAll(args.ip, args.temps, args.verbose, args.ipv6)
     else:
         liste = args.port.split(",")
         for ports in liste:
@@ -51,16 +58,19 @@ def main():
                 continue
             else:
                 return print("Port", ports, "non valide")
-        return scanSpé(args.ip, args.port, args.temps, args.verbose)
+        return scanSpé(args.ip, args.port, args.temps, args.verbose, args.ipv6)
 
 
-def scanAll(ip: str, temps: str, verbose: str):
+def scanAll(ip: str, temps: str, verbose: str, ipv6: str):
     print("----------------Scan All Port----------------")
     if temps == None:
         temps = 0
     resultat = {}
     for p in range(1, 65536):
-        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        if ipv6:
+            sock = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
+        else:
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.settimeout(1)
         time.sleep(int(temps))
         try:
@@ -78,7 +88,7 @@ def scanAll(ip: str, temps: str, verbose: str):
     return print(json_resultat)
 
 
-def scanFast(ip: str, temps: str, verbose: str):
+def scanFast(ip: str, temps: str, verbose: str, ipv6: str):
     print("----------------Scan Most used Port----------------")
     if temps == None:
         temps = 0
@@ -89,7 +99,10 @@ def scanFast(ip: str, temps: str, verbose: str):
             portListe.append(ligne)
     fichier.close
     for p in portListe:
-        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        if ipv6:
+            sock = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
+        else:
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.settimeout(1)
         time.sleep(int(temps))
         try:
@@ -107,14 +120,18 @@ def scanFast(ip: str, temps: str, verbose: str):
     return print(json_resultat)
 
 
-def scanSpé(ip: str, port: str, temps: str, verbose: str):
+def scanSpé(ip: str, port: str, temps: str, verbose: str, ipv6: str):
     print("----------------Scan", port, "Port----------------")
+
     if temps == None:
         temps = 0
     resultat = {}
     liste = port.split(",")
     for p in liste:
-        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        if ipv6:
+            sock = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
+        else:
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.settimeout(1)
         time.sleep(int(temps))
         try:
