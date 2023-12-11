@@ -38,10 +38,6 @@ def main():
 
     args = parser.parse_args()
 
-    #    liste = args.port.split(",")
-    #    for p in list:
-    #        if int(p) < 0 or int(p) > 65535:
-    #            return print("Saisir port valide")
     if args.port.lower() == "fast":
         print("fast")
         return scanFast(args.ip, args.temps, args.verbose)
@@ -49,6 +45,12 @@ def main():
         print("all")
         return scanAll(args.ip, args.temps, args.verbose)
     else:
+        liste = args.port.split(",")
+        for ports in liste:
+            if 0 <= int(ports) <= 65536:
+                continue
+            else:
+                return print("Port", ports, "non valide")
         return scanSpé(args.ip, args.port, args.temps, args.verbose)
 
 
