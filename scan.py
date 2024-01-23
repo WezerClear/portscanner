@@ -7,10 +7,12 @@ import json
 def main():
     print(
         """
- ()()                ____ 
- (..)               /|o  |
- /\/\ SGB PortScan /o|  o|
-c\db/o............/o_|_o_|
+
+        
+             ()()                ____ 
+             (..)               /|o  |
+             /\/\ SGB PortScan /o|  o|
+            c\db/o............/o_|_o_|
             
 """
     )
