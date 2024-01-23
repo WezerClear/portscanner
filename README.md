@@ -1,4 +1,4 @@
 # portscanner
 scan port 
-Developed by WezerClear
+Developed by WezerClear / SGB
 This script is for testing or training purposes only
