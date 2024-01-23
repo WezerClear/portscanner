@@ -19,7 +19,7 @@ def main():
     parser = argparse.ArgumentParser(
         prog="Scan port",
         description="Scan de port",
-        epilog="dev: WezerClear  GitHub: https://github.com/WezerClear ",
+        epilog="dev: WezerClear / SGB  GitHub: https://github.com/WezerClear ",
     )
 
     parser.add_argument(
